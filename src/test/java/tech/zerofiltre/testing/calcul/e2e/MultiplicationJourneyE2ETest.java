@@ -29,12 +29,12 @@ public class MultiplicationJourneyE2ETest {
 
   @BeforeAll
   static void setUpFireFoxDriver() {
-    WebDriverManager.firefoxdriver().setup();
+    WebDriverManager.chromedriver().setup();
   }
 
   @BeforeEach
   void setUpWebDriver() {
-    webDriver = new FirefoxDriver();
+    webDriver = new ChromeDriver();
     baseUrl = "http://localhost:" + port + "/calculator";
 
   }
